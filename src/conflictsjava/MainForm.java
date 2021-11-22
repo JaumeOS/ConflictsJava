@@ -37,6 +37,11 @@ public class MainForm extends javax.swing.JFrame {
         lblResult.setText("jLabel1");
 
         btnUno.setText("1");
+        btnUno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnoActionPerformed(evt);
+            }
+        });
 
         btnDos.setText("2");
 
@@ -75,6 +80,11 @@ public class MainForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnoActionPerformed
+        lblResult.setText("");
+        lblResult.setText("1");
+    }//GEN-LAST:event_btnUnoActionPerformed
 
     /**
      * @param args the command line arguments
